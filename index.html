@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>گص رازگو | Gaz Razgo - كركوك</title>
+    <!-- مكتبة Tailwind CSS للمظهر العصري -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- خط كايرو الفخم من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url('https://images.unsplash.com/photo-1561651823-34fed022540e?q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+
+    <!-- شريط التنقل (Navbar) -->
+    <header class="bg-gray-950/95 border-b border-orange-600/20 sticky top-0 z-50 backdrop-blur-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-reverse space-x-3">
+                <div class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center font-black text-white text-xl shadow-lg shadow-orange-600/30">R</div>
+                <span class="text-2xl font-black text-orange-500 tracking-wide">گص رازگو</span>
+            </div>
+            <nav class="hidden md:flex space-x-reverse space-x-8 font-bold text-sm">
+                <a href="#home" class="text-orange-500 hover:text-orange-400 transition">الرئيسية</a>
+                <a href="#about" class="text-gray-300 hover:text-orange-500 transition">من نحن</a>
+                <a href="#menu" class="text-gray-300 hover:text-orange-500 transition">المنيو الكامل</a>
+                <a href="#contact" class="text-gray-300 hover:text-orange-500 transition">اتصل بنا</a>
+            </nav>
+            <a href="tel:07709108080" class="bg-orange-600 text-white px-5 py-2 rounded-full font-bold hover:bg-orange-700 transition shadow-md shadow-orange-600/20 text-sm">اتصل واطلب</a>
+        </div>
+    </header>
+
+    <!-- القسم الرئيسي (Hero Section) -->
+    <section id="home" class="hero-bg py-32 px-6 text-center relative overflow-hidden">
+        <div class="max-w-3xl mx-auto relative z-10">
+            <span class="bg-orange-600/20 text-orange-400 border border-orange-500/30 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider inline-block mb-6">جودة ثابتة، طعم مايتغير</span>
+            <h1 class="text-4xl md:text-6xl font-black mb-6 leading-tight text-white">گص رازگو | <span class="text-orange-500">Gaz Razgo</span></h1>
+            <p class="text-xl md:text-2xl mb-8 font-medium text-gray-300 italic">"مو للكل.. للي يعرف الطعم الصح" 🔥</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#menu" class="bg-orange-500 text-gray-950 px-8 py-3 rounded-xl font-black text-base hover:bg-orange-400 transition shadow-lg shadow-orange-500/20">تصفح أقسام المنيو</a>
+                <a href="https://www.instagram.com/razgo.iq" target="_blank" class="bg-orange-600 text-white px-8 py-3 rounded-xl font-bold text-base hover:bg-orange-700 transition shadow-lg shadow-orange-600/30">✨ فتح منيو إنستغرام المحدث</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- معلومات المطعم (About Section) -->
+    <section id="about" class="py-20 bg-gray-950 border-b border-gray-800">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-orange-500 font-bold text-sm uppercase tracking-wider block mb-2">من نحن</span>
+                <h2 class="text-3xl font-black mb-6 text-white">طعم الـگص الأصلي في كركوك</h2>
+                <p class="text-gray-400 leading-relaxed mb-6 text-base">
+                    مطعم طعام سريع (Fast Food) متميز يقدم أفضل الوجبات السريعة، الشاورما، السندويجات، والبرگر بنكهة خاصة وجودة ثابتة لا تتغير أبداً. نحن جاهزون يومياً لخدمتكم وإسعادكم بأجود أنواع اللحوم العراقية والمكونات الطازجة.
+                </p>
+                <div class="p-4 bg-gray-900 border-r-4 border-orange-500 rounded-l-xl">
+                    <p class="text-sm font-bold text-gray-300">📍 كركوك - رحيماوه - قرب فلكة اخوان</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="h-48 bg-gray-800 rounded-2xl flex flex-col items-center justify-center font-bold text-gray-300 border border-gray-700 p-4 text-center">
+                    <span class="text-2xl mb-2">🌯</span>
+                    <span class="text-sm">أكبر سيخ گص في المنطقة</span>
+                </div>
+                <div class="h-48 bg-orange-600/10 rounded-2xl flex flex-col items-center justify-center font-bold text-orange-500 border border-orange-500/20">
+                    <span class="text-3xl font-black">31K</span>
+                    <span class="text-xs text-gray-400 mt-1">متابع على إنستغرام</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- المنيو الكامل (Menu Section) -->
+    <section id="menu" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <span class="text-orange-500 font-bold text-sm block mb-2">قائمة الطعام الكاملة</span>
+                <h2 class="text-3xl font-black text-white">الوجبات الرئيسية والبارستا</h2>
+                <p class="text-gray-400 text-sm mt-2">ملاحظة: المنيو يتحدث باستمرار، للمزيد من الوجبات يرجى مراجعة حسابنا</p>
+            </div>
+            
+            <!-- قسم الـگص والوجبات الرئيسية (إضافة لتكملة النقص المتوقع) -->
+            <div class="mb-16">
+                <h3 class="text-xl font-black text-orange-500 border-r-4 border-orange-500 pr-3 mb-8">🔥 ركن الـگص والوجبات الرئيسية</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-right">
+                    <div class="bg-gray-950 p-5 rounded-2xl border border-gray-800">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-bold text-lg text-white">وجبة گص لحم عربي</h4>
+                            <span class="text-orange-500 font-black text-sm">حسب الوزن</span>
+                        </div>
+                        <p class="text-gray-400 text-xs">تقدم مع المقبلات، الصمون الحار، والبطاطا</p>
+                    </div>
+                    <div class="bg-gray-950 p-5 rounded-2xl border border-gray-800">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-bold text-lg text-white">وجبة گص دجاج</h4>
+                            <span class="text-orange-500 font-black text-sm">حسب الوزن</span>
+                        </div>
+                        <p class="text-gray-400 text-xs">بتتبيلة رازگو الخاصة مع الثومية والبطاطا</p>
+                    </div>
+                    <div class="bg-gray-950 p-5 rounded-2xl border border-gray-800">
+                        <div class="flex justify-between items-start mb-2">
+                            <h4 class="font-bold text-lg text-white">إسكندر لحم / دجاج</h4>
+                            <span class="text-orange-500 font-black text-sm">مميز</span>
+                        </div>
+                        <p class="text-gray-400 text-xs">قطع الـگص الفاخرة مع الخبز المحمص، الصلصة الحمراء والزبدة الساخنة</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم البرگر (من ملف 86558.jpg) -->
+            <div class="mb-16">
+                <h3 class="text-xl font-black text-orange-500 border-r-4 border-orange-500 pr-3 mb-8">🍔 ركن البرگر</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-right">
+                    <div class="bg-gray-950 p-5 rounded-2xl border border-gray-800">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="font-bold text-lg text-white">برگر جامبو</h4>
+                            <span class="text-orange-500 font-black text-sm">7,000 IQD</span>
+                        </div>
+                        <p class="text-gray-400 text-xs leading-relaxed">شريحة لحم - گص لحم - 2 قطعة جبن تشيدر - صوص - كجب - طماطة - خس - فنكر</p>
+                    </div>
+                    <div class="bg-gray-950 p-5 rounded-2xl border border-gray-800">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="font-bold text-lg text-white">برگر دبل</h4>
+                            <span class="text-orange-500 font-black text-sm">7,000 IQD</span>
+                        </div>
+                        <p class="text-gray-400 text-xs leading-relaxed">2 شريحة لحم - صوص - 2 جبن تشيدر - كجب - طماطة - خس - فنكر</p>
+                    </div>
+                    <div class="bg-gray-950 p-5 rounded-2xl border border-gray-800">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="font-bold text-lg text-white">برگر لحم</h4>
+                            <span class="text-orange-500 font-black text-sm">4,500 IQD</span>
+                        </div>
+                        <p class="text-gray-400 text-xs leading-relaxed">شريحة لحم - صوص - جبن تشيدر - كجب - طماطة - خس</p>
+                    </div>
+                    <div class="bg-gray-950 p-5 rounded-2xl border border-gray-800">
+                        <div class="flex justify-between items-start mb-3">
+                            <h4 class="font-bold text-lg text-white">برگر سكالوب دجاج</h4>
+                            <span class="text-orange-500 font-black text-sm">4,000 IQD</span>
+                        </div>
+                        <p class="text-gray-400 text-xs leading-relaxed">1 شريحة دجاج مقرمش - صوص - جبن تشيدر - كجب - طماطة - خس</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم السندويج (من ملف 86564.jpg) -->
+            <div class="mb-16">
+                <h3 class="text-xl font-black text-orange-500 border-r-4 border-orange-500 pr-3 mb-8">🌯 السندويج والخفايف</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-right">
+                    <div class="bg-gray-950 p-5 rounded-2xl border border-gray-800 flex justify-between items-center">
+                        <div>
+                            <h4 class="font-bold text-white">شاورما سوري لحم</h4>
+                            <p class="text-gray-500 text-xs mt-1">طعم ولحم عراقي فاخر</p>
+                        </div>
+                        <span class="text-orange-500 font-black">3,500 IQD</span>
+                    </div>
+                    <div class="bg-gray-950 p-5 rounded-2xl border border-gray-800 flex justify-between items-center">
+                        <div>
+                            <h4 class="font-bold text-white">شاورما سوري دجاج</h4>
+                            <p class="text-gray-500 text-xs mt-1">تتبيلة رازگو الخاصة</p>
+                        </div>
+                        <span class="text-orange-500 font-black">3,000 IQD</span>
+                    </div>
+                    <div class="bg-gray-950 p-5 rounded-2xl border border-gray-800 flex justify-between items-center">
+                        <div>
+                            <h4 class="font-bold text-white">لوبستر</h4>
+                            <p class="text-gray-400 text-xs mt-1">خبز تورنيلا - دجاج مقرمش - صوص - طماطة - خس</p>
+                        </div>
+                        <span class="text-orange-500 font-black">4,000 IQD</span>
+                    </div>
+                    <div class="bg-gray-950 p-5 rounded-2xl border border-gray-800 flex justify-between items-center">
+                        <h4 class="font-bold text-white">فلافل بالصمون الكهربائي</h4>
+                        <span class="text-orange-500 font-black">1,000 IQD</span>
+                    </div>
+                    <div class="bg-gray-950 p-5 rounded-2xl border border-gray-800 flex justify-between items-center">
+                        <h4 class="font-bold text-white">فلافل بالصمون الحجري</h4>
+                        <span class="text-orange-500 font-black">1,000 IQD</span>
+                    </div>
+                    <div class="bg-gray-950 p-5 rounded-2xl border border-gray-800 flex justify-between items-center">
+                        <h4 class="font-bold text-white">فلافل بالخبز السوري</h4>
+                        <span class="text-orange-500 font-black">1,000 IQD</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- قسم المقبلات (من ملف 86562.jpg) -->
+            <div class="mb-16">
+                <h3 class="text-xl font-black text-orange-500 border-r-4 border-orange-500 pr-3 mb-8">🥗 المقبلات والشراب</h3>
+                <div class="grid sm:grid-cols-3 gap-6 text-right mb-6">
+                    <div class="bg-gray-950 p-5 rounded-2xl border border-gray-800 text-center">
+                        <h4 class="font-bold text-white text-lg">مقبلات حجم كبير</h4>
+                        <span class="text-orange-500 font-black block mt-2">7,500 IQD</span>
+                    </div>
+                    <div class="bg-gray-950 p-5 rounded-2xl border border-gray-800 text-center">
+                        <h4 class="font-bold text-white text-lg">مقبلات حجم وسط</h4>
+                        <span class="text-orange-500 font-black block mt-2">5,500 IQD</span>
+                    </div>
+                    <div class="bg-gray-950 p-5 rounded-2xl border border-gray-800 text-center">
+                        <h4 class="font-bold text-white text-lg">مقبلات حجم صغير</h4>
+                        <span class="text-orange-500 font-black block mt-2">3,500 IQD</span>
+                    </div>
+                </div>
+                <p class="text-center text-sm text-gray-400 mb-8">(حمص - باذنجانية - فتوش - فتة - مايونيز تفاح - مايونيز لهانة - جاجيك - تبولة - اسبكتي - شوندر)</p>
+            </div>
+
+            <!-- بارستا رازگو للحلو والعصائر (من ملف 86556.jpg وملف 86560.jpg) -->
+            <div>
+                <h3 class="text-xl font-black text-orange-500 border-r-4 border-orange-500 pr-3 mb-8">☕ بارستا رازگو (الحلويات والعصائر)</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-right text-sm">
+                    <div class="bg-gray-950 p-4 rounded-xl border border-gray-800 flex justify-between"><span>كريب اسبيشل</span> <span class="text-orange-400">5,000 IQD</span></div>
+                    <div class="bg-gray-950 p-4 rounded-xl border border-gray-800 flex justify-between"><span>كريب كندر</span> <span class="text-orange-400">3,500 IQD</span></div>
+                    <div class="bg-gray-950 p-4 rounded-xl border border-gray-800 flex justify-between"><span>كريب سوشي</span> <span class="text-orange-400">4,000 IQD</span></div>
+                    <div class="bg-gray-950 p-4 rounded-xl border border-gray-800 flex justify-between"><span>حلوة لوتس / بستاشيو</span> <span class="text-orange-400">4,000 IQD</span></div>
+                    <div class="bg-gray-950 p-4 rounded-xl border border-gray-800 flex justify-between"><span>ميلك شيك (مانجو/فراولة)</span> <span class="text-orange-400">3,000 IQD</span></div>
+                    <div class="bg-gray-950 p-4 rounded-xl border border-gray-800 flex justify-between"><span>موهيتو (ليمون نعناع/بلو)</span> <span class="text-orange-400">2,500 IQD</span></div>
+                    <div class="bg-gray-950 p-4 rounded-xl border border-gray-800 flex justify-between"><span>ايس لاتيه موكا</span> <span class="text-orange-400">2,500 IQD</span></div>
+                    <div class="bg-gray-950 p-4 rounded-xl border border-gray-800 flex justify-between"><span>قهوة بالملك / ميكاتو</span> <span class="text-orange-400">2,000 IQD</span></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- الاتصال والطلب الفوري (Contact Section) -->
+    <section id="contact" class="py-20 bg-gray-950 border-t border-gray-800">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="text-3xl font-black mb-4 text-white">اطلب أكلك هسة 📞</h2>
+            <p class="text-gray-400 mb-8">تواصل معنا عبر الأرقام الرسمية للمطعم للتوصيل أو الحجز المسبق:</p>
+            
+            <div class="flex flex-wrap justify-center gap-6 font-bold text-lg mb-12">
+                <a href="tel:07709108080" class="bg-gray-900 border border-orange-500/30 px-6 py-4 rounded-2xl hover:border-orange-500 text-orange-400 block transition">
+                    📞 0770 910 8080
+                </a>
+                <a href="tel:07708111919" class="bg-gray-900 border border-orange-500/30 px-6 py-4 rounded-2xl hover:border-orange-500 text-orange-400 block transition">
+                    📞 0770 811 1919
+                </a>
+            </div>
+
+            <a href="https://www.instagram.com/razgo.iq" target="_blank" class="inline-flex items-center space-x-reverse space-x-2 text-sm font-bold text-gray-400 hover:text-orange-500 transition">
+                <span>تابعونا على إنستغرام الرسمي لمشاهدة الستوريات اليومية:</span>
+                <span class="text-orange-500 underline">razgo.iq</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- الفوتر -->
+    <footer class="bg-gray-950 text-gray-600 py-6 text-center border-t border-gray-900 text-xs">
+        <p>© 2026 مطعم گص رازگو - كركوك. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
